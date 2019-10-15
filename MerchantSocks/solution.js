@@ -20,4 +20,4 @@ const pairSocks = dividedSocks => {
   return pairedSocks;
 }
 
-const sockMerchant = (n, socks) =>pairSocks(divideSocks(socks));
+const sockMerchant = (n, socks) => pairSocks(divideSocks(socks));
