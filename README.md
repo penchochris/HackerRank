@@ -2,7 +2,7 @@
 Hacker rank solutions for Interview Preparation Kit
 
 
-# 1 - Sock Merchant: 
+# Sock Merchant: 
 John works at a clothing store. He has a large pile of socks that he must pair by color for sale. Given an array of integers representing the color of each sock, determine how many pairs of socks with matching colors there are.
 
 For example, there are **n = 7**  socks with colors **ar = [1,2,1,2,1,3,2]**. There is one pair of color **1** and one of color **2** . There are three odd socks left, one of each color. The number of pairs is **2**.
@@ -27,7 +27,7 @@ const n = 9
 const ar = [10, 20, 20, 10, 10, 30, 50, 10, 20]
 ```
 
-# 2 - Clouds 
+# Clouds 
 
 Emma is playing a new mobile game that starts with consecutively numbered clouds. Some of the clouds are thunderheads and others are cumulus. She can jump on any cumulus cloud having a number that is equal to the number of the current cloud plus **1**  or **2** . She must avoid the thunderheads. Determine the minimum number of jumps it will take Emma to jump from her starting postion to the last cloud. It is always possible to win the game.
 
@@ -78,4 +78,32 @@ The second line contains a single string **s**, of **n** characters that describ
 ```
 const n = 8
 const s = 'UDDDUDUU' //using array directly in my exercice .split('')
+```
+
+# Repeated String
+
+Lilah has a string, **s**, of lowercase English letters that she repeated infinitely many times.
+
+Given an integer, **n**, find and print the number of letter a's in the first **n** letters of Lilah's infinite string.
+
+For example, if the string **s = 'abcac'** and **n = 10**, the substring we consider is **abcacabcac**, the first **10** characters of her infinite string. There are **4** occurrences of a in the substring.
+
+**Function Description**
+
+Complete the repeatedString function in the editor below. It should return an integer representing the number of occurrences of a in the prefix of length **n** in the infinitely repeating string.
+
+repeatedString has the following parameter(s):
+
+* s: a string to repeat
+* n: the number of characters to consider
+
+**Input Format**
+
+The first line contains a single string, **s**.
+The second line contains an integer, **n**.
+
+**Sample Input**
+```
+const n = 10
+const s = 'aba'
 ```
