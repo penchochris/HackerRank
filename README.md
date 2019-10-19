@@ -1,8 +1,9 @@
-# Hacker Rank
+# Hacker Rank - Interview Preparation Kit
 Hacker rank solutions for Interview Preparation Kit
 
+## Warm-up Challenges
 
-# 1 - Sock Merchant: 
+### Sock Merchant: 
 John works at a clothing store. He has a large pile of socks that he must pair by color for sale. Given an array of integers representing the color of each sock, determine how many pairs of socks with matching colors there are.
 
 For example, there are **n = 7**  socks with colors **ar = [1,2,1,2,1,3,2]**. There is one pair of color **1** and one of color **2** . There are three odd socks left, one of each color. The number of pairs is **2**.
@@ -27,7 +28,7 @@ const n = 9
 const ar = [10, 20, 20, 10, 10, 30, 50, 10, 20]
 ```
 
-# 2 - Clouds 
+### Clouds 
 
 Emma is playing a new mobile game that starts with consecutively numbered clouds. Some of the clouds are thunderheads and others are cumulus. She can jump on any cumulus cloud having a number that is equal to the number of the current cloud plus **1**  or **2** . She must avoid the thunderheads. Determine the minimum number of jumps it will take Emma to jump from her starting postion to the last cloud. It is always possible to win the game.
 
@@ -48,4 +49,139 @@ The first line contains an integer **n** , the total number of clouds. The secon
 ```
 const n = 7
 const c = [0, 0, 1, 0, 0, 1, 0]
+```
+
+### Counting Valleys
+
+Gary is an avid hiker. He tracks his hikes meticulously, paying close attention to small details like topography. During his last hike he took exactly **n** steps. For every step he took, he noted if it was an uphill, **U** , or a downhill, **D** step. Gary's hikes start and end at sea level and each step up or down represents a **1** unit change in altitude. We define the following terms:
+
+* A mountain is a sequence of consecutive steps above sea level, starting with a step up from sea level and ending with a step down to sea level.
+* A valley is a sequence of consecutive steps below sea level, starting with a step down from sea level and ending with a step up to sea level.
+Given Gary's sequence of up and down steps during his last hike, find and print the number of valleys he walked through.
+
+For example, if Gary's path is **s = [DDUUUUUDD]**, he first enters a valley **2** units deep. Then he climbs out an up onto a mountain **2** units high. Finally, he returns to sea level and ends his hike.
+
+**Function Description**
+
+Complete the countingValleys function in the editor below. It must return an integer that denotes the number of valleys Gary traversed.
+
+countingValleys has the following parameter(s):
+
+* n: the number of steps Gary takes
+* s: a string describing his path
+
+**Input Format**
+
+The first line contains an integer **n**, the number of steps in Gary's hike.
+The second line contains a single string **s**, of **n** characters that describe his path.
+
+**Sample Input**
+```
+const n = 8
+const s = 'UDDDUDUU' //using array directly in my exercice .split('')
+```
+
+### Repeated String
+
+Lilah has a string, **s**, of lowercase English letters that she repeated infinitely many times.
+
+Given an integer, **n**, find and print the number of letter a's in the first **n** letters of Lilah's infinite string.
+
+For example, if the string **s = 'abcac'** and **n = 10**, the substring we consider is **abcacabcac**, the first **10** characters of her infinite string. There are **4** occurrences of a in the substring.
+
+**Function Description**
+
+Complete the repeatedString function in the editor below. It should return an integer representing the number of occurrences of a in the prefix of length **n** in the infinitely repeating string.
+
+repeatedString has the following parameter(s):
+
+* s: a string to repeat
+* n: the number of characters to consider
+
+**Input Format**
+
+The first line contains a single string, **s**.
+The second line contains an integer, **n**.
+
+**Sample Input**
+```
+const n = 10
+const s = 'aba'
+```
+
+## Arrays
+
+### 2D Array - DS
+
+Given a **6 x 6** 2D Array, **arr**:
+```
+1 1 1 0 0 0
+0 1 0 0 0 0
+1 1 1 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+```
+
+We define an hourglass in **A** to be a subset of values with indices falling in this pattern in **arr**'s graphical representation:
+
+```
+a b c
+  d
+e f g
+```
+
+There are **16** hourglasses in **arr**, and an hourglass sum is the sum of an hourglass' values. Calculate the hourglass sum for every hourglass in **arr**, then print the maximum hourglass sum.
+
+For example, given the 2D array:
+
+```
+-9 -9 -9  1 1 1 
+ 0 -9  0  4 3 2
+-9 -9 -9  1 2 3
+ 0  0  8  6 6 0
+ 0  0  0 -2 0 0
+ 0  0  1  2 4 0
+ ```
+ 
+We calculate the following **16** hourglass values:
+
+```
+-63, -34, -9, 12, 
+-10, 0, 28, 23, 
+-27, -11, -2, 10, 
+9, 17, 25, 18
+```
+
+Our highest hourglass value is **28** from the hourglass:
+
+```
+0 4 3
+  1
+8 6 6
+```
+
+**Note**: If you have already solved the Java domain's Java 2D Array challenge, you may wish to skip this challenge.
+
+**Function Description**
+
+Complete the function hourglassSum in the editor below. It should return an integer, the maximum hourglass sum in the array.
+
+hourglassSum has the following parameter(s):
+
+* arr: an array of integers
+
+**Input Format**
+
+Each of the **6** lines of inputs **arr[i]** contains **6** space-separated integers **arr[i][j]**.
+
+**Sample Input**
+
+```
+1 1 1 0 0 0
+0 1 0 0 0 0
+1 1 1 0 0 0
+0 0 2 4 4 0
+0 0 0 2 0 0
+0 0 1 2 4 0
 ```
