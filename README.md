@@ -184,7 +184,7 @@ const arr = [
   [1, 1, 1, 0, 0, 0],
   [0, 0, 2, 4, 4, 0],
   [0, 0, 0, 2, 0, 0],
-  [0, 0, 1, 2, 4, 0],
+  [0, 0, 1, 2, 4, 0]
 ];
 ```
 
@@ -238,6 +238,12 @@ The first line contains an integer **t**, the number of test cases.
 Each of the next **t** pairs of lines are as follows:
 - The first line contains an integer **t**, the number of people in the queue
 - The second line has **n** space-separated integers describing the final state of the queue.
+
+**Input Sample**
+
+```
+const queue = [5, 1, 2, 3, 7, 8, 6, 4];
+```
 
 **Output Format**
 
